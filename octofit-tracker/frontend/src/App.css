@@ -1,0 +1,119 @@
+:root {
+  --octo-ink: #102542;
+  --octo-ocean: #1d5c63;
+  --octo-mint: #d8f3dc;
+  --octo-sand: #f4efe6;
+  --octo-sky: #edf6f9;
+}
+
+.App {
+  color: var(--octo-ink);
+  background:
+    radial-gradient(circle at top left, rgba(216, 243, 220, 0.95), transparent 35%),
+    radial-gradient(circle at top right, rgba(29, 92, 99, 0.22), transparent 28%),
+    linear-gradient(180deg, #f9fbfc 0%, #edf3f6 100%);
+}
+
+.octofit-navbar {
+  background: rgba(16, 37, 66, 0.92);
+  backdrop-filter: blur(14px);
+}
+
+.brand-mark {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #7bd389, #5bc0be);
+  color: #0b1f35;
+  font-size: 0.95rem;
+  font-weight: 800;
+}
+
+.octofit-navbar .nav-link {
+  border-radius: 999px;
+  color: rgba(255, 255, 255, 0.78);
+  transition: background-color 180ms ease, color 180ms ease, transform 180ms ease;
+}
+
+.octofit-navbar .nav-link:hover,
+.octofit-navbar .nav-link:focus-visible,
+.octofit-navbar .nav-link.active {
+  color: #fff;
+  background: rgba(255, 255, 255, 0.14);
+  transform: translateY(-1px);
+}
+
+.app-hero {
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.96), rgba(237, 246, 249, 0.94)),
+    linear-gradient(180deg, #ffffff, #eef7f5);
+}
+
+.hero-summary {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(216, 243, 220, 0.92));
+}
+
+.resource-page {
+  background: rgba(255, 255, 255, 0.88);
+}
+
+.resource-page__hero {
+  background:
+    linear-gradient(135deg, rgba(216, 243, 220, 0.7), rgba(255, 255, 255, 0.96)),
+    linear-gradient(180deg, #fff, #f6f4ef);
+}
+
+.resource-page__lede {
+  max-width: 42rem;
+}
+
+.resource-page__actions {
+  min-width: 11rem;
+}
+
+.resource-stat-card,
+.resource-controls,
+.resource-table {
+  border-radius: 1rem;
+}
+
+.resource-table thead th {
+  color: var(--octo-ink);
+  font-size: 0.8rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.resource-table tbody td {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  vertical-align: middle;
+}
+
+.resource-table tbody tr:hover {
+  background-color: rgba(93, 177, 178, 0.08);
+}
+
+.modal-content {
+  border-radius: 1.25rem;
+}
+
+.bg-light-subtle {
+  background-color: rgba(237, 246, 249, 0.8);
+}
+
+@media (max-width: 991.98px) {
+  .octofit-navbar .navbar-collapse {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.12);
+  }
+
+  .resource-page__actions {
+    min-width: 0;
+  }
+}
